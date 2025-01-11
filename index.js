@@ -1,7 +1,6 @@
 const http =require("http")
 const fs=require("fs")
-const PORT=4000
-const hostname="localhost"
+const PORT=process.env.PORT;
 const home=fs.readFileSync("./index.html","utf-8")
 const server=http.createServer((req,res)=>{
     if(req.url==="/")
@@ -20,6 +19,6 @@ const server=http.createServer((req,res)=>{
         return res.end("<h1>404 this is error</h1>")
     }
 })
-server.listen(PORT,hostname,()=>{
-    console.log(`server is running on http://${hostname}:${PORT}`)
+server.listen(PORT,()=>{
+    console.log(`server is running`)
 })
