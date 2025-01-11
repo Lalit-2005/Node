@@ -1,6 +1,6 @@
-const http =require("http")
-const fs=require("fs")
-const PORT=process.env.PORT || 4000
+const http = require("http");
+const fs = require("fs");
+const PORT = process.env.PORT || 3000;
 const home=fs.readFileSync("./index.html","utf-8")
 const server=http.createServer((req,res)=>{
     if(req.url==="/")
@@ -20,5 +20,5 @@ const server=http.createServer((req,res)=>{
     }
 })
 server.listen(PORT,()=>{
-    console.log(`server is running`)
+    console.log(`server is running on ${PORT}`)
 })
