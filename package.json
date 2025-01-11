@@ -2,11 +2,11 @@
   "name": "my-node-app",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vercel dev",
+    "dev": "vercel dev",        
     "build": "vercel build",
-    "start": "vercel start"
+    "start": "vercel start"     
   },
   "dependencies": {
-    "express": "^4.17.1"
+    
   }
 }
