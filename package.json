@@ -1,5 +1,5 @@
 {
-  "name": "my-node-app",
+  "name": "node-vercel-check",
   "version": "1.0.0",
   "scripts": {
     "dev": "vercel dev",        
