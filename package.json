@@ -1,5 +1,5 @@
 {
-  "name": "node-vercel-check",
+  "name": "node-timepass",
   "version": "1.0.0",
   "scripts": {
     "dev": "vercel dev",        
