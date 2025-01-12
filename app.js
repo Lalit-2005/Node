@@ -9,16 +9,19 @@ const home = fs.readFileSync(path.join(_dirname,"index.html"), "utf-8");
 
 
 const server = http.createServer((req, res) => {
-    if (req.url === "/") {
-        res.setHeader("Content-Type", "text/html");
+    if (req.url === "/") 
+    {
         return res.end(home);
     }
-    if (req.url === "/about") {
+    if (req.url === "/about") 
+    {
         return res.end("<h1>hello my home page</h1>");
     }
-    if (req.url === "/contact") {
+    if (req.url === "/contact") 
+    {
         return res.end("<h1>hello my contact page</h1>");
-    } else {
+    } else 
+    {
         return res.end("<h1>404 this is error</h1>");
     }
 });
